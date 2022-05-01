@@ -1,11 +1,14 @@
 import React from 'react';
 import Home from './Views/Home';
 import './App.css';
+import Header from './Views/Header';
 
 function App() {
+  const appTitle = 'Free Games For You';
   return (
     <div className="App">
-      <div className="App-header">
+      <Header title={appTitle} />
+      <div className="App-View pt-4">
         <Home />
       </div>
     </div>
