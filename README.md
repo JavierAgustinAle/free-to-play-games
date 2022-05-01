@@ -1,3 +1,25 @@
+# Free To Play Games
+#### Made by [Javier Ale](https://www.linkedin.com/in/javieragustinale/)
+
+This Solution was made using React.
+
+### Configuration
+To be able to run and see the project, first you need to clone it.
+The second step its to run `npm install` and wait a few seconds.This installs the required dependencies.
+After this, you need to run the React project, you can do this by runnning  `npm run` .
+The project will start on your localhost.
+
+### The project
+The inital screen shows a list of games, each game is into a card.
+You have the chance to filter by Platform and/or Category.
+Also you can sort the list by: 
+  * Release date 
+  * pPopularity
+  * Alphabetical
+  * Relevance
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
