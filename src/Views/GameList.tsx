@@ -1,14 +1,17 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import GameCard from './GameCard';
 import { GameInterface } from '../Interfaces/Game';
 
 const GameList = () => {
+  // TODO: Manage Filters
+
   const [games, setGames] = useState<GameInterface[]>([]);
 
   const urlGames = 'https://free-to-play-games-database.p.rapidapi.com/api/games';
   const getData = () => {
     axios.request(options).then(function (response) {
-      console.log(response.data);
       setGames(response.data);
     }).catch(function (error) {
       // Show Error
@@ -31,7 +34,11 @@ const GameList = () => {
 
   return (
     <div className='row pl-2 pr-2 pb-3'>
-
+      {
+        games.map((g, index) => (
+          <GameCard key={index} game={g} />
+        ))
+      }
     </div>
   )
 };
